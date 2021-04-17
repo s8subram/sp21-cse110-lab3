@@ -1,0 +1,41 @@
+/* Applies only to the line below the title */
+.subtitle1{
+    color: #BD4255;
+    text-align: center;
+}
+
+/* Line two lines below the title */
+.subtitle2{
+    color: rgb(189, 66, 85);
+    text-align: center;
+}
+
+/* Set backgroud for header to yellow */
+header{
+    background-color: lightyellow;
+}
+
+nav{
+    background-color: lightgray;
+    display: inline;
+}
+
+/* Box properties for list elements */
+li{
+    margin: 8px, 300px, 8px, 200px;
+    width: 600px;
+    height: 25px;
+    padding: 0.5cm, 0.5in, 0.5cm, 0.5in;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    border-radius: 10px;
+}
+
+body{
+    background-color: lightcyan;
+}
+
+.Day{
+    text-decoration: underline overline;
+}
