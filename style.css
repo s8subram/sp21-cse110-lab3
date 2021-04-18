@@ -4,6 +4,15 @@
     src: url("fonts/IndieFlower-Regular.ttf") format('truetype');
 }
 
+/* Media query on screen width that turns the background black */
+/* Because you don't deserve to read the document if your window is too small */
+@media only screen and (max-width: 1000px) {
+    *{
+        background-color: black;
+        color: black;
+    }
+}
+
 /* Set a global font */
 *{
     font-family: "IndieFlower";
@@ -29,13 +38,16 @@ header, nav{
 
 /* Catches the list of the navigator and makes it follow the screen */
 nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 5;
     background-color: white;
     position: sticky;
-    top: 5px;
+    top: 0px;
 }
 
-/* Box properties for list elements */
-li{
+/* Makes a fancy blue rounded border for the navigator */
+nav ul li{
     margin: 8px, 300px, 8px, 200px;
     width: 600px;
     height: 25px;
@@ -45,6 +57,13 @@ li{
     border-color: blue;
     border-radius: 10px;
     display: flex;
+}
+
+/* Structure the itemized list with a grid, separating amount from item */
+div ul li{
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
 }
 
 /* Catches almost the entire text of the site */
@@ -76,4 +95,10 @@ img{
 /* Catches the ordered list in day 2 */
 p + ol{
     background-color: burlywood;
+}
+
+/* Captures the juicy information under the summary */
+summary ~ p{
+    color: darkmagenta;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
