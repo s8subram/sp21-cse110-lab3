@@ -1,3 +1,7 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Applies only to the line below the title */
 .subtitle1{
     color: #BD4255;
@@ -20,6 +24,12 @@ nav{
     display: inline;
 }
 
+.nav-list{
+    background-color: white;
+    position: sticky;
+    top: 20px;
+}
+
 /* Box properties for list elements */
 li{
     margin: 8px, 300px, 8px, 200px;
@@ -30,6 +40,7 @@ li{
     border-style: solid;
     border-color: blue;
     border-radius: 10px;
+    display: flex;
 }
 
 body{
@@ -38,4 +49,18 @@ body{
 
 .Day{
     text-decoration: underline overline;
+
+    display: block;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+strong{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img{
+    display: none;
+    position: static;
 }
