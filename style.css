@@ -18,16 +18,16 @@
     font-family: "IndieFlower";
 }
 
-/* Applies only to the line below the title */
-.subtitle1{
-    color: #BD4255;
-    text-align: center;
-}
-
 /* Line two lines below the title */
 .subtitle2{
     color: rgb(189, 66, 85);
     text-align: center;
+}
+
+/* Captures the title at the very top */
+header h1{
+    max-width: 90vw;
+    max-height: 60vh;
 }
 
 /* Set backgroud for header and nav to yellow */
@@ -43,7 +43,7 @@ nav ul{
     flex-grow: 5;
     background-color: white;
     position: sticky;
-    top: 0px;
+    top: 1em;
 }
 
 /* Makes a fancy blue rounded border for the navigator */
@@ -61,6 +61,19 @@ nav ul li{
 
 /* Structure the itemized list with a grid, separating amount from item */
 div ul li{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+    padding-top: auto;
+    padding-bottom: auto;
+    padding-left: auto;
+    padding-right: auto;
+
+    border-style: solid;
+    border-color: red;
+
     display: grid;
     grid-template-columns: 60px auto;
     grid-template-rows: auto auto auto auto auto auto auto auto;
@@ -101,4 +114,27 @@ p + ol{
 summary ~ p{
     color: darkmagenta;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Highlight button in crimson when hovering */
+button:hover{
+    color: crimson;
+    background-color: cyan;
+}
+
+/* Turn button black when clicked */
+button:active{
+    color: black;
+    background-color: black;
+}
+
+/* Every input with a type attribute will have a background of dark salmon */
+input[type]{
+    background-color: darksalmon;
+}
+
+/* Seals the demonic pact to make sure the user picks the correct favorite author */
+#favAuthor{
+    color: crimson;
+    background-color: black;
 }
